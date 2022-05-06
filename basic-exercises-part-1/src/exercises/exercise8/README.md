@@ -1,5 +1,4 @@
 ### [Java Basic: Exercise-8](https://www.w3resource.com/java-exercises/basic/java-basic-exercise-8.php)
-
 ***
 Write a Java program to display the following pattern.
 ***
