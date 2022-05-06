@@ -1,4 +1,4 @@
-### [Java Basic: Exercise-9]()
+### [Java Basic: Exercise-9](https://www.w3resource.com/java-exercises/basic/java-basic-exercise-9.php)
 
 ***
 Write a Java program to compute the specified expressions and print the output.
