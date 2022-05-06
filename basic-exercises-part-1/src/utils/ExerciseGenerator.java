@@ -21,8 +21,12 @@ public class ExerciseGenerator {
         });
 
         List<String> exercisesList = Arrays.asList(exercisesArray);
-        int newExerciseOrder = Integer.parseInt(exercisesList.get(exercisesList.size() - 1).substring("exercises".length() - 1)) + 1;
-
+        int newExerciseOrder = 0;
+        for (String exercise : exercisesList) {
+            int order = Integer.parseInt(exercise.substring("exercise".length()));
+            if (newExerciseOrder <= order)
+                newExerciseOrder = order + 1;
+        }
         //README.md
         String content = "###[]()\n***\n\n***\n__\n<pre>\n\n</pre>";
         String url = "./basic-exercises-part-1/src/exercises/exercise" + newExerciseOrder;
