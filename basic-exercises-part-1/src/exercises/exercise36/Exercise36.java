@@ -18,6 +18,6 @@ public class Exercise36 {
         double y2 = Math.toRadians(input.nextDouble());
         System.out.print("The distance betwen those points is: " +
                 (EARTHS_RADIUS * Math.acos(Math.sin(x1) * Math.sin(x2) +
-                        Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2))));
+                        Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2))) + " km");
     }
 }
