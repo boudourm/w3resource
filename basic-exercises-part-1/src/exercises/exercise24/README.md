@@ -3,7 +3,7 @@
 ***
 Write a Java program to convert a binary number to a Octal number.
 ***
-__
+_Sample output_
 <pre>
 Enter Binary Number : 111                                                                                     
 Equivalent Octal Value of 111 is :7  

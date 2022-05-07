@@ -3,7 +3,7 @@
 ***
 Write a Java program to convert a binary number to hexadecimal number.
 ***
-__
+_Sample output:_
 <pre>
 Input a Binary Number: 1101                                                                                   
 HexaDecimal value: D

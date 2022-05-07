@@ -3,7 +3,7 @@
 ***
 Write a Java program to convert a binary number to decimal number.
 ***
-__
+_Sample output:_
 <pre>
 Input a binary number: 100                                                                                    
 Decimal Number: 4 

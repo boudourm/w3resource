@@ -3,7 +3,7 @@
 ***
 Write a Java program to convert an octal number to a binary number.
 ***
-__
+_Sample output:_
 <pre>
 Input any octal number: 7                                                                                    
 Equivalent binary number: 111
