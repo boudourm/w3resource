@@ -3,10 +3,8 @@ package exercises.exercise39;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 public class Exercise39 {
-    private static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         List<Integer> firsts = Arrays.asList(1, 2, 3, 4);
