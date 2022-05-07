@@ -11,12 +11,28 @@ public class Exercise17 {
         System.out.print("Input second binary number: ");
         String secondBinaryString = input.next();
         String resultMassage = "Sum of two binary numbers: ";
+        System.out.print(resultMassage + euclidianDivisionBinarySum(firstBinaryString, secondBinaryString));
+        System.out.println("\t- euclidianDivisionBinarySum");
         System.out.print(resultMassage + binaryAdditionSum(firstBinaryString, secondBinaryString));
         System.out.println("\t- binaryAdditionSum");
         System.out.print(resultMassage + decimalConversionBinarySum(firstBinaryString, secondBinaryString));
         System.out.println("\t- decimalConversionBinarySum");
         System.out.print(resultMassage + integerWrapperBinarySum(firstBinaryString, secondBinaryString));
         System.out.print("\t- integerWrapperBinarySum");
+    }
+
+    private static String euclidianDivisionBinarySum(String firstString, String secondString) {
+        int firstNumber = Integer.parseInt(firstString);
+        int secondNumber = Integer.parseInt(secondString);
+        String sum = "";
+        int remainer = 0;
+        for (; firstNumber > 0 || secondNumber > 0 || remainer != 0; ) {
+            sum = ((firstNumber % 10 + secondNumber % 10 + remainer) % 2) + sum;
+            remainer = (firstNumber % 10 + secondNumber % 10 + remainer) / 2;
+            firstNumber = firstNumber / 10;
+            secondNumber = secondNumber / 10;
+        }
+        return sum;
     }
 
     private static String integerWrapperBinarySum(String firstString, String secondString) {
