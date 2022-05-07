@@ -12,17 +12,17 @@ public class Exercise38 {
         char[] chars = string.toCharArray();
         int letters = 0, space = 0, number = 0, other = 0;
         for (char character : chars) {
-            if (character == ' ') space++;
-            else if (character >= '0' && character <= '9')
+            if (Character.isSpaceChar(character))
+                space++;
+            else if (Character.isDigit(character))
                 number++;
-            else if ((character >= 'A' && character <= 'Z')
-                    || (character >= 'a' && character <= 'z'))
+            else if (Character.isLetter(character))
                 letters++;
             else other++;
         }
         System.out.println("letter: " + letters);
         System.out.println("space: " + space);
         System.out.println("number: " + number);
-        System.out.println("other: " + other);
+        System.out.print("other: " + other);
     }
 }
