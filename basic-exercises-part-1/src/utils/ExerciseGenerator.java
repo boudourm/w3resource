@@ -1,12 +1,13 @@
 package utils;
 
-import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class ExerciseGenerator {
@@ -29,8 +30,12 @@ public class ExerciseGenerator {
         }
         //README.md
         String solution = "https://www.w3resource.com/java-exercises/basic/java-basic-exercise-" + newExerciseOrder + ".php";
-        String content = "###[Java Basic: Exercise-" + newExerciseOrder + "](" + solution + ")\n***\n\n***\n" +
-                "_Sample output:_\n<pre>\n\n</pre>";
+        HashMap<String, String> data = fetchExerciseData(solution);
+        String content = "###[Java Basic: Exercise-" + newExerciseOrder + "](" + solution + ")\n***\n" +
+                data.get("statement") +
+                "\n\n***\n" +
+                "_Sample output:_\n" +
+                data.get("sampleOutput");
         String url = "./basic-exercises-part-1/src/exercises/exercise" + newExerciseOrder;
         new File(url).mkdirs();
         url += "/README.md";
@@ -47,6 +52,42 @@ public class ExerciseGenerator {
         url = "./basic-exercises-part-1/src/exercises/exercise" + newExerciseOrder + "/Exercise" + newExerciseOrder + ".java";
         Path exercise = Paths.get(url);
         Files.writeString(exercise, content);
+    }
+
+    private static HashMap<String, String> fetchExerciseData(String exercise) throws IOException {
+        URL url = new URL(exercise);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
+        int status = connection.getResponseCode();
+
+        BufferedReader raw = new BufferedReader(
+                new InputStreamReader(connection.getInputStream())
+        );
+        String inputLine = "";
+        StringBuffer content = new StringBuffer();
+        String p = "<p>Write a Java program";
+        String beginPre = "<pre class=\"output\">";
+        String endPre = "</pre>";
+        String sampleOutPut = "", statement = "";
+        while ((inputLine = raw.readLine()) != null) {
+            if (inputLine.contains(beginPre)) {
+                sampleOutPut = inputLine;
+                while (!(inputLine = raw.readLine()).contains(endPre)) {
+                    sampleOutPut += "\n" + inputLine;
+                }
+                sampleOutPut += "\n" + inputLine;
+            } else if (inputLine.contains(p)) {
+                statement = inputLine;
+            } else continue;
+        }
+
+        raw.close();
+        connection.disconnect();
+
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("statement", statement);
+        map.put("sampleOutput", sampleOutPut);
+        return map;
     }
 
 }
