@@ -12,6 +12,9 @@ public class Exercise52 {
         int secondNumber = input.nextInt();
         System.out.print("Input the third number: ");
         int thirdNumber = input.nextInt();
-        System.out.print("The result is: " + (firstNumber + secondNumber == thirdNumber));
+        System.out.print("The result is: " + (
+                (firstNumber + secondNumber == thirdNumber) ||
+                        (firstNumber + thirdNumber == secondNumber) ||
+                        (secondNumber + thirdNumber == firstNumber)));
     }
 }
