@@ -28,7 +28,6 @@ public class ExerciseGenerator {
                 newExerciseOrder = order + 1;
         }
         //README.md
-        //### [Java Basic: Exercise-37](
         String solution = "https://www.w3resource.com/java-exercises/basic/java-basic-exercise-" + newExerciseOrder + ".php";
         String content = "###[Java Basic: Exercise-" + newExerciseOrder + "](" + solution + ")\n***\n\n***\n" +
                 "_Sample output:_\n<pre>\n\n</pre>";
