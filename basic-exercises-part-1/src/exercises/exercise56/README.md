@@ -12,11 +12,6 @@ _Sample output:_
 <pre class="output">
 Input the beginning of the range: 5
 Input the end of the range: 20
-Input the divider : 3
-Numbers divisible by 3 : 
-6
-9
-12
-15
-18
+Input the divider : 5
+Number of integers divisible by 5 : 4
 </pre>

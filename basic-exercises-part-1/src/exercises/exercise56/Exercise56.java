@@ -12,16 +12,8 @@ public class Exercise56 {
         int end = input.nextInt();
         System.out.print("Input the divider : ");
         int divider = input.nextInt();
-        System.out.println("Numbers divisible by " + divider + " : ");
-        int increment = 1;
-        boolean period = false;
-        for (int i = beginning; i <= end; i += increment) {
-            if (period) System.out.println(i);
-            else if (i % divider == 0) {
-                System.out.println(i);
-                increment = divider;
-                period = true;
-            }
-        }
+        System.out.println("Number of integers divisible by " + divider + " : " +
+                (beginning % divider == 0 ? (((end - beginning + 1) / divider) + 1) :
+                        ((end - beginning + 1) / divider)));
     }
 }
