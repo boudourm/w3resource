@@ -12,7 +12,7 @@ public class Exercise58 {
         String[] words = input.nextLine().split(" ");
         String[] wordsStartingWithUpperCase = {};
         for (int i = 0; i < words.length; i++)
-            words[i] = (words[i].charAt(0) + "").toUpperCase() + words[i].substring(1);
+            words[i] = Character.toUpperCase(words[i].charAt(0)) + words[i].substring(1);
         System.out.print(Arrays.stream(words).collect(Collectors.joining(" ")));
     }
 }
