@@ -17,7 +17,7 @@ public class Exercise57 {
                 return;
             default:
                 if (integer < 0) integer = -integer;
-                for (int i = 2; i < integer; i++) {
+                for (int i = 2; i < (int) Math.sqrt(integer); i++) {
                     if (integer % i == 0) factors++;
                 }
                 System.out.print(factors + 2);
