@@ -9,7 +9,7 @@ public class Exercise72 {
         System.out.print("Input a string of length >= 3: ");
         String string = input.nextLine();
         if (string.length() < 3)
-            System.out.print("###");
+            System.out.print(string + "#".repeat(3 - string.length()));
         else
             System.out.print(string.substring(0, 3));
     }
