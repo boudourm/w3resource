@@ -5,5 +5,7 @@
 
 ***
 _Sample output:_
-<pre class="output">false
+<pre class="output">
+{50, -20, 0, 30, 40, 60, 10}
+false
 </pre>

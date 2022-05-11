@@ -6,12 +6,7 @@ public class Exercise75 {
     private static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.print("Input a string : ");
-        String string = input.nextLine();
-        if (string.length() < 2) {
-            System.err.print("The string must have a length >= 2");
-            return;
-        }
-        System.out.print(string.charAt(0) == string.charAt(string.length() - 1));
+        int[] integerArray = {50, -20, 0, 30, 40, 60, 10};
+        System.out.print(integerArray[0] == integerArray[integerArray.length - 1]);
     }
 }
