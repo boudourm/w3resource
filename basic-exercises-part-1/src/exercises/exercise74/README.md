@@ -6,6 +6,6 @@
 ***
 _Sample output:_
 <pre class="output">
-Input string : 10pm
+{10, -20, 0, 30, 40, 60, 10}
 true
 </pre>
