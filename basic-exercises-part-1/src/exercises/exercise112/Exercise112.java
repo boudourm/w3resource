@@ -14,6 +14,6 @@ public class Exercise112 {
             trailingZeros += buffer / 5;
             buffer /= 5;
         }
-        System.out.print("Number of trainling zeos of the factorial of " + number + " is : " + trailingZeros);<
+        System.out.print("Number of trainling zeos of the factorial of " + number + " is : " + trailingZeros);
     }
 }
