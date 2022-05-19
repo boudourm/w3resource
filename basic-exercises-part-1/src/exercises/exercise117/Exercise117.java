@@ -7,6 +7,8 @@ public class Exercise117 {
     private static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        // Used method = https://www.youtube.com/watch?v=HBdVVFqTrUU&t
         System.out.print("Input a positive integer: ");
 
         //Initialization
