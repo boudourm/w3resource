@@ -66,6 +66,8 @@ public class ExerciseGenerator {
         String inputLine = "";
         StringBuffer content = new StringBuffer();
         String p = "<p>Write a Java program";
+        String pWithSpace = "<p> Write a Java program";
+        ;
         String beginPre = "<pre class=\"output\">";
         String endPre = "</pre>";
         String sampleOutPut = "", statement = "";
@@ -76,7 +78,7 @@ public class ExerciseGenerator {
                     sampleOutPut += "\n" + inputLine;
                 }
                 sampleOutPut += "\n" + inputLine;
-            } else if (inputLine.contains(p)) {
+            } else if (inputLine.contains(p) || inputLine.contains(pWithSpace)) {
                 statement = inputLine;
             } else continue;
         }
