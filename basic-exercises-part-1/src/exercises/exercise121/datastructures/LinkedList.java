@@ -1,7 +1,6 @@
 package exercises.exercise121.datastructures;
 
 import java.util.List;
-import java.util.Stack;
 
 public class LinkedList {
     private Node head;
@@ -28,19 +27,15 @@ public class LinkedList {
     }
 
     public void reverse() {
-        Stack<Node> stack = new Stack<Node>();
+        Node previousNode = null;
         Node currentNode = this.head;
-        while (currentNode != null) {
-            stack.push(currentNode);
-            currentNode = currentNode.getNext();
-        }
-        this.head = stack.pop();
-        currentNode = this.head;
-        while (!stack.isEmpty()) {
-            currentNode.setNext(stack.pop());
-            currentNode = currentNode.getNext();
-        }
-        currentNode.setNext(null);
+        do {
+            Node nextNode = currentNode.getNext();
+            currentNode.setNext(previousNode);
+            previousNode = currentNode;
+            currentNode = nextNode;
+        } while (currentNode != null);
+        this.head = previousNode;
     }
 
     public void print() {
