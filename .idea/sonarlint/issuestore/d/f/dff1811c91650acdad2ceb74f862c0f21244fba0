@@ -1,0 +1,12 @@
+
+?
+java:S2129
+"$Remove this "BigInteger" constructor(çú»æûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ßéÍ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ô²²–
+S	java:S106"9Replace this use of System.out or System.err by a logger.(˜êà÷úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(›Ô„øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ú¤²Øÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ğˆßÇ
+?
+java:S1068")Remove this unused "input" private field.(‹ì‡²

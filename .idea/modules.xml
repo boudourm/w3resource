@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/basic-exercises-part-1/basic-exercises-part-1.iml" filepath="$PROJECT_DIR$/basic-exercises-part-1/basic-exercises-part-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-type-exercises/data-type-exercises.iml" filepath="$PROJECT_DIR$/data-type-exercises/data-type-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/input-output-exercises/input-output-exercises.iml" filepath="$PROJECT_DIR$/input-output-exercises/input-output-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/math-exercises/math-exercises.iml" filepath="$PROJECT_DIR$/math-exercises/math-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/method-exercises/method-exercises.iml" filepath="$PROJECT_DIR$/method-exercises/method-exercises.iml" />
+    </modules>
+  </component>
+</project>

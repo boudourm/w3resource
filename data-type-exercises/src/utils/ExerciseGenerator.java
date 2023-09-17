@@ -24,11 +24,10 @@ public class ExerciseGenerator {
         List<String> exercisesList = Arrays.asList(exercisesArray);
         int newExerciseOrder = 0;
         for (String exercise : exercisesList) {
-            int order = Integer.parseInt(exercise.substring("exercises".length()));
+            int order = Integer.parseInt(exercise.substring("exercise".length()));
             if (newExerciseOrder <= order)
                 newExerciseOrder = order + 1;
         }
-        newExerciseOrder = 1;
         //README.md
         String solution = "https://www.w3resource.com/java-exercises/datatypes/java-datatype-exercise-" + newExerciseOrder + ".php";
         HashMap<String, String> data = fetchExerciseData(solution);
@@ -74,7 +73,7 @@ public class ExerciseGenerator {
         String sampleOutPut = "", statement = "";
         while ((inputLine = raw.readLine()) != null) {
             if (inputLine.contains(beginPre)) {
-                sampleOutPut = inputLine;
+                sampleOutPut = inputLine.replace(beginPre, beginPre + "\n");
                 while (!(inputLine = raw.readLine()).contains(endPre)) {
                     sampleOutPut += "\n" + inputLine;
                 }

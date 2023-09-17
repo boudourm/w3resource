@@ -1,0 +1,25 @@
+
+o
+java:S2293Y"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹ëõ¤
+C
+java:S1604"(Make this anonymous inner class a lambda(ÃÙ€áÿÿÿÿÿ
+2
+java:S1643N"Use a StringBuilder instead.(êü¡
+2
+java:S1643P"Use a StringBuilder instead.(êü¡
+z
+java:S1149C"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ï„Š¡şÿÿÿÿ
+V
+java:S1854C";Remove this useless assignment to local variable "content".(ï„Š¡şÿÿÿÿ
+U
+java:S1854=":Remove this useless assignment to local variable "status".(ìÛ²ˆøÿÿÿÿ
+1
+java:S3626S"Remove this redundant jump.(İí¦
+=
+java:S1659I"'Declare "statement" on a separate line.(­Ö§
+F
+java:S1481="+Remove this unused "status" local variable.(ìÛ²ˆøÿÿÿÿ
+G
+java:S1481C",Remove this unused "content" local variable.(ï„Š¡şÿÿÿÿ
+7
+java:S1116F"Remove this empty statement.(Åñ­õşÿÿÿÿ

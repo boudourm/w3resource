@@ -1,0 +1,12 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯±¸“ÿÿÿÿÿ
+W
+java:S4973"<Strings and Boxed types should be compared using "equals()".(áùŠ·ùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(›¦¤Ó
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ª¬²
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ä—ž–
+S
+java:S1854"8Remove this useless assignment to local variable "list".(Œìíòùÿÿÿÿ
+S
+java:S1854"8Remove this useless assignment to local variable "nums".(É½ããþÿÿÿÿ
